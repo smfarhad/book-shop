@@ -2,8 +2,8 @@
 <div>
     <div *ngIf="getCart().length>0">    
         <ul>
-            <li *ngFor="let book of getCart()">
-                {{book.name}} 
+            <li *ngFor="let book of getCart(); let i=index;">
+                <p class="my-4 text-2xl">{{i+1}} {{book.name}}</p>
             </li>
         </ul>
     </div>

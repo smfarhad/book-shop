@@ -21,5 +21,4 @@ export class CartService {
   remove(book:Book){
     this.cart = this.cart.filter((b)=>b!=book)
   }
-
 }
